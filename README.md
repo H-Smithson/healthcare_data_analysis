@@ -4,6 +4,17 @@
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+# Initial Setup
+* This project is developed and tested with Python 3.12.10.
+It is recommended to create a virtual environment before installing dependencies:
+
+* Run the following in the terminal : "bash
+python3.12 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt"
+
+* The notebooks are designed to be ran and worked through in the following order -
+* 0 ETL, 1 Basic Visualisations, 2 Advanced Visualisations
 
 ## Dataset Content
 * Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
