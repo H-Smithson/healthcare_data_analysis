@@ -34,7 +34,6 @@ This project uses the [Healthcare Insurance Dataset](https://www.kaggle.com/data
 | smoker        | Smoking status (yes/no)                                                                      |
 | region        | Geographic region (northeast, northwest, southeast, southwest)                               |
 | charges       | Individual medical insurance costs                                                           |
-| bmi_category  | BMI category: Underweight (<18.5), Normal (18.5–24.9), Overweight (25–29.9), Obese (≥30)     |
 
 
 ## Business Requirements
@@ -152,11 +151,6 @@ ensuring that stakeholders from all backgrounds can explore and understand the d
 enables users to uncover cost drivers, identify regional disparities, and spot outliers — all 
 through a clean, interactive interface. 
 
-## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
-
 ## Development Roadmap
 * Learn advanced Tableau features and Python libraries (e.g., Plotly, Seaborn) to improve visualizations.
 
@@ -206,6 +200,5 @@ Tableau – for creating interactive dashboards
 - [Tableau Basics for Beginner - Tableau in Two Minutes](https://www.youtube.com/watch?v=jEgVto5QME8)
 - [Dashboard design guidance from Learn Tableau in Under 2 hours | Dashboards, Relationships, and Calculations](https://www.youtube.com/watch?v=TKG1_6lw1_c)
 
-## Acknowledgements (optional)
+## Acknowledgements
 * Thank you to James for helping to test the project.
-
