@@ -38,7 +38,14 @@ This project uses the [Healthcare Insurance Dataset](https://www.kaggle.com/data
 
 
 ## Business Requirements
-* Describe your business requirements
+
+* Identify key factors that influence healthcare insurance charges.
+
+* Compare costs across demographics including age, gender, and region.
+
+* Determine the effect of lifestyle factors like BMI and smoking status on insurance charges.
+
+* Provide visual insights to support decision-making for healthcare providers and policymakers.
 
 
 ## Hypothesis and how to validate?
@@ -52,18 +59,36 @@ This project uses the [Healthcare Insurance Dataset](https://www.kaggle.com/data
 Hypotheses will be validated through statistical tests and visualisations
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+* Data Collection: Import dataset from Kaggle and validate contents.
+
+* Data Cleaning: Handle missing values, standardize categories, and create BMI categories.
+
+* Identify trends, distributions, and correlations.
+
+* Visualization: Create charts and dashboards for insights using Python and Tableau.
+
+* Interpretation & Reporting: Summarize insights, validate hypotheses, and document findings.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Business Requirement                          | Visualisation Mapping                                    |
+| --------------------------------------------- | -------------------------------------------------------- |
+| Compare costs by smoker status                | Average Charges by Smoking Status (Bar Chart)            |
+| Effect of age and BMI on charges              | Age vs Charges, BMI vs Charges (Scatter Plots)           |
+| Regional disparities in charges               | Regional Cost Heatmap, Charges by Region & Smoker Status |
+| Family impact (number of children) on charges | Average Charges by Number of Children (Bar Chart)        |
+| Identify anomalies or outliers                | Outlier Detection: BMI vs Charges (Scatter Plot)         |
+
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Descriptive Statistics: Summary statistics to understand data distribution.
+
+* Correlation Analysis: Explore relationships between numeric variables (age, BMI, charges).
+
+* Visualisation: Bar charts, scatter plots, heatmaps, treemaps, dashboards.
+
+* Limitations: Dataset size is small, no time-series data, and features are limited.
+
+* Generative AI Tools were used for code optimization, visualization suggestions, and exploratory analysis guidance.
 
 ## Ethical considerations
 * Dataset is anonymised and publicly available
@@ -133,31 +158,54 @@ through a clean, interactive interface.
 * If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* Learn advanced Tableau features and Python libraries (e.g., Plotly, Seaborn) to improve visualizations.
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* Python libraries used:
+
+pandas – data manipulation and CSV handling
+
+numpy – numeric operations and calculations
+
+matplotlib – static data visualizations
+
+seaborn – advanced statistical visualizations
+
+plotly – interactive visualizations
+
+scipy – statistical tests
+
+statsmodels – regression modeling and advanced stats
+
+pingouin – additional statistical tests and normality checks
+
+* Dashboard / BI Tools:
+
+Tableau – for creating interactive dashboards
 
 ## Conclusions
 
+* Smoking status, BMI, and age are major drivers of healthcare charges.
+
+* Regional disparities and number of children have measurable effects on costs.
+
+
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+* Code Institute Learning Materials
+* Generative AI (ChatGPT, CoPilot)
+* Relevant Library Documentation (pandas, numpy, seaborn, matplotlib, plotly)
+* Youtube Tutorials (Linked below)
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
+- Instructions on how to perform various tasks with Data Analysis Libraries referenced from Code Institute's Online Learning Platform.
+- ChatGPT used to help plan project and brainstorm features.
+- CoPilot used to help build and optimise code.
+- Features from relevant library documentation used to create visualisations and customise them.
+- [Tableau Basics for Beginner - Tableau in Two Minutes](https://www.youtube.com/watch?v=jEgVto5QME8)
+- [Dashboard design guidance from Learn Tableau in Under 2 hours | Dashboards, Relationships, and Calculations](https://www.youtube.com/watch?v=TKG1_6lw1_c)
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Thank you to James for helping to test the project.
+
