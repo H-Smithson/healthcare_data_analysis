@@ -1,6 +1,6 @@
-# Project XYZ
+# Healthcare Data Analysis Project
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+**Healthcare Data Analysis Project** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -8,16 +8,32 @@
 * This project is developed and tested with Python 3.12.10.
 It is recommended to create a virtual environment before installing dependencies:
 
-* Run the following in the terminal : "bash
-python3.12 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt"
+* Run the following in the terminal:  
+```
+    bash
+    python3.12 -m venv .venv
+    source .venv/Scripts/activate
+    pip install -r requirements.txt
+```
 
-* The notebooks are designed to be ran and worked through in the following order -
-* 0 ETL, 1 Basic Visualisations, 2 Advanced Visualisations
+* The notebooks are designed to be ran and worked through in the following order:
+1. 01_etl_pipeline
+2. 02_basic_visualisations
+3. 03_advanced_visualisations
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+This project uses the [Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance) containing 1,337 records on how demographic and lifestyle factors influence medical insurance charges.
+
+| Column        | Description                                                                                  |
+|---------------|----------------------------------------------------------------------------------------------|
+| age           | Age of the insured individual                                                                |
+| sex           | Gender (male, female)                                                                        |
+| bmi           | Body Mass Index — indicator of body fat based on height and weight                           |
+| children      | Number of dependents covered by insurance                                                    |
+| smoker        | Smoking status (yes/no)                                                                      |
+| region        | Geographic region (northeast, northwest, southeast, southwest)                               |
+| charges       | Individual medical insurance costs                                                           |
+| bmi_category  | BMI category: Underweight (<18.5), Normal (18.5–24.9), Overweight (25–29.9), Obese (≥30)     |
 
 
 ## Business Requirements
@@ -25,7 +41,14 @@ pip install -r requirements.txt"
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* H1: Smokers will have higher insurance charges than non-smokers
+* H2: Charges will be positively correlated with BMI
+* H3: Charges will be positively correlated with age
+* H4: There will be an effect of number of children on charges
+* H5: There will be an effect of region on charges
+* H6: There will be an effect of sex on charges  
+  
+Hypotheses will be validated through statistical tests and visualisations
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -42,8 +65,9 @@ pip install -r requirements.txt"
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* Dataset is anonymised and publicly available
+* Analysis focuses on group-level insights, not individuals
+* Results are for educational and analytical purposes only
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
