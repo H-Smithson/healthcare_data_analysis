@@ -20,6 +20,7 @@ It is recommended to create a virtual environment before installing dependencies
 1. 01_etl_pipeline
 2. 02_basic_visualisations
 3. 03_advanced_visualisations
+4. [Healthcare Analysis Dashboard](https://public.tableau.com/app/profile/andrea.ferreira4559/viz/Healthcare-analysis-dashboard/MasterDashboardHealthcareCharges?publish=yes) created using Tableau
 
 ## Dataset Content
 This project uses the [Healthcare Insurance Dataset](https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance) containing 1,337 records on how demographic and lifestyle factors influence medical insurance charges.
@@ -70,10 +71,61 @@ Hypotheses will be validated through statistical tests and visualisations
 * Results are for educational and analytical purposes only
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+The [Healthcare Analysis Dashboard](https://public.tableau.com/app/profile/andrea.ferreira4559/viz/Healthcare-analysis-dashboard/MasterDashboardHealthcareCharges?publish=yes) is an interactive dashboard exploring healthcare charges across different demographics and regions. The goal is to uncover patterns and cost drivers in medical expenses using real world data.<br>
+
+### Dashboard Design & Communication Strategy
+**Project Title:** Healthcare Cost Analysis Dashboard  <br>
+
+**1. Dashboard Pages and Content** <br>
+This dashboard consists of a single interactive page designed to explore healthcare charges 
+across demographics and regions. All visualizations are presented in floating mode for 
+flexible layout and precise positioning.
+
+**Content Blocks and Widgets** 
+| Element                | Description                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------|
+| Title Block            | Displays dashboard name and purpose at the top center                                         |
+| Region Filter (Dropdown)| Floating filter widget allowing users to explore data by geographic region                   |
+| Legend Blocks          | Floating legends for color-coded dimensions (e.g., Smoker status, Region)                     |
+| Text Labels & Headers  | Section headers to group charts into themes (e.g., Lifestyle, Demographics)                   |
+
+
+**Visualizations (7 Floating Charts)**
+1. *Average Charges by Smoking Status* – Bar chart comparing costs between smokers 
+and non-smokers 
+2. *Average Charges by Number of Children* – Bar chart showing cost variation by family 
+size 
+3. *Age vs Charges* – Scatter plot revealing age-related cost trends 
+4. *BMI vs Charges by Gender* – Scatter plot comparing BMI impact across genders 
+5. *Regional Cost Heatmap* – Heatmap showing average charges by region 
+6. *Charges by Region & Smoker Status* – Hierarchical view of cost drivers 
+7. *Outlier Detection: BMI vs Charges* – Scatter plot identifying anomalies in cost vs BMI 
+
+**2. Feature Revisions During Development** <br>
+During development, several visual elements were revised to better communicate insights: 
+- Replaced planned line chart with a scatter plot for Age vs Charges to better show 
+individual variation 
+- Switched from stacked bar chart to treemap for regional breakdown to highlight 
+hierarchical relationships 
+- Added outlier detection chart to surface anomalies in BMI vs Charges late in the 
+process 
+
+**3. Communicating Insights to Technical and Non-Technical Audiences**
+**Design Strategies**
+| Technique                | Purpose                                                                                   |
+|--------------------------|-------------------------------------------------------------------------------------------|
+| Clear Titles & Labels    | Help non-technical users understand chart purpose and axes                                |
+| Interactive Filtering    | Region dropdown allows intuitive exploration of localized trends                          |
+| Color Coding & Legends   | Visual cues for categories like smoker status and region                                  |
+| Tooltips                 | Hover-over details for technical users without cluttering the layout                      |
+| Chart Variety            | Mix of bar charts, scatter plots, heatmaps, and treemaps for accessibility               |
+| Section Headers          | Thematic grouping to guide narrative flow for all audiences                               |
+
+**4. Summary**<br>
+This dashboard was designed to be both analytically powerful and visually intuitive, 
+ensuring that stakeholders from all backgrounds can explore and understand the data. <br>It 
+enables users to uncover cost drivers, identify regional disparities, and spot outliers — all 
+through a clean, interactive interface. 
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
